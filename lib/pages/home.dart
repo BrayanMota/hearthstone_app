@@ -22,7 +22,8 @@ class _HomePageState extends State<HomePage> {
         title: const Text(
           'Bem Vindo, Samir',
           style: TextStyle(
-            color: Colors.black,
+            color: CustomColors.corVinho,
+            fontWeight: FontWeight.bold,
           ),
         ),
         actions: const [

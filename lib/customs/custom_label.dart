@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../utils/colors.dart';
+
 class CustomLabel extends StatelessWidget {
   final String title;
   final bool seeAll;
@@ -10,7 +12,7 @@ class CustomLabel extends StatelessWidget {
   const CustomLabel({
     required this.title,
     required this.seeAll,
-    this.titleColor = Colors.black,
+    this.titleColor = CustomColors.corVinho,
     this.textSeeAllColor = Colors.black,
     this.topHeight = 24.0,
     super.key,
@@ -28,7 +30,7 @@ class CustomLabel extends StatelessWidget {
           Text(
             title,
             style: TextStyle(
-              fontSize: 24.0,
+              fontSize: 20.0,
               color: titleColor,
             ),
           ),
@@ -36,7 +38,7 @@ class CustomLabel extends StatelessWidget {
             Text(
               'Ver todos',
               style: TextStyle(
-                fontSize: 20.0,
+                fontSize: 16.0,
                 color: textSeeAllColor,
               ),
             ),

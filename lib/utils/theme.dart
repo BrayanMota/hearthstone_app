@@ -11,6 +11,7 @@ class CustomTheme {
         elevation: 0,
         backgroundColor: Colors.transparent,
       ),
+      fontFamily: 'Belwe',
     );
   }
 }

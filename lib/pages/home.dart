@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
         title: const Text(
           'Bem Vindo, Samir',
           style: TextStyle(
-            color: Colors.white,
+            color: Colors.black,
           ),
         ),
         actions: const [
@@ -43,6 +43,7 @@ class _HomePageState extends State<HomePage> {
       children: [
         _buildCardCreateDeck(),
         _buildListHeroes(),
+        _buildMyDecks(),
       ],
     );
   }
@@ -99,6 +100,27 @@ class _HomePageState extends State<HomePage> {
                   // )
                 ],
               );
+            }),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildMyDecks() {
+    return Column(
+      children: [
+        CustomLabel(
+          title: 'Meus decks',
+          seeAll: true,
+        ),
+        Container(
+          height: 100,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: listHeroes.length,
+            itemBuilder: ((context, index) {
+              return Container();
             }),
           ),
         ),

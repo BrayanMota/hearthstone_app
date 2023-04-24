@@ -32,6 +32,7 @@ class CustomLabel extends StatelessWidget {
             style: TextStyle(
               fontSize: 20.0,
               color: titleColor,
+              fontWeight: FontWeight.bold,
             ),
           ),
           if (seeAll)
